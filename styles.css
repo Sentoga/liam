@@ -1,0 +1,115 @@
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --primary-color: #d10000;
+    --secondary-color: #a30000;
+    --card-bg: #fff;
+    --bar-bg: #e0e0e0;
+}
+
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f5f5f5;
+    --primary-color: #ff0000;
+    --secondary-color: #cc0000;
+    --card-bg: #1e1e1e;
+    --bar-bg: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+#darkModeToggle {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.slave-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.slave-card img {
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+}
+
+.description {
+    font-style: italic;
+    margin: 20px 0;
+}
+
+ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.stats {
+    margin: 20px 0;
+}
+
+.stat {
+    margin-bottom: 10px;
+}
+
+.bar {
+    background: var(--bar-bg);
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.fill {
+    background: var(--primary-color);
+    height: 100%;
+    border-radius: 5px;
+}
+
+#hire-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background 0.3s;
+}
+
+#hire-btn:hover {
+    background: var(--secondary-color);
+}
+
+#counter {
+    font-weight: bold;
+}
